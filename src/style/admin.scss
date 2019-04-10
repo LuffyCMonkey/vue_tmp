@@ -1,0 +1,98 @@
+/* Stardaq Status Infomation Start */
+.mid_content{
+  width:400px;
+  height:15px;
+  background-color:white;
+  float:left;
+  margin:5px;
+}
+.textFont{
+  font-size: 12px;
+  text-align: right;
+  color: green;
+}
+
+.textFontWeight{
+  font-weight: bold;
+}
+.fontBlack{
+  color: black;
+}
+.fontGreen{
+  color: green;
+}
+
+.fontBlue{
+  color: blue;
+}
+
+.fontRed{
+  color: red;
+}
+/* Stardaq Status Infomation End */
+.statusInfoTable{
+  th, td{border:1px none black; }
+  width: 100%;
+  text-align: right;
+}
+
+/* Stardaq Status Infomation End */
+.statusInfoTable_2{
+  th, td{border:1px none black; }
+  width: 100%;
+  text-align: left;
+}
+
+.gridClass {
+  bottom: 20px;
+  width: 100%;
+  overflow: auto;
+  border: 1px solid blue;
+  min-height: calc(60vh);
+  max-height: calc(60vh);
+}
+
+.footerBlockImage {
+  position:absolute;
+  bottom: 3vh;
+  margin: 0 0 0 70px;
+  height:40px;
+  text-align: center;
+  //background:#ccc;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.aTag{
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.preNextTag{
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+}
+/* 마우스 오버(마우스 올렸을때) */
+.preNextTag:hover {
+  opacity:0.4;
+}
+/* 마우스 클릭하고있을때 */
+.preNextTag:active{
+  background-color: #24c2ff;
+  font-weight: bold;
+}
+/* 마우스 한번클릭후 */
+.preNextTag:visited{
+  color: black;
+}
