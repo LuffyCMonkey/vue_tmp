@@ -1,6 +1,9 @@
 # vue_tmp
 
-> A Vue.js project
+> Front Web Base Source ...
+> Vue JS 공부하는 사람을 위한 기본 예제 프로젝트 입니다. 
+> 통신 방식은 API 통신을 기본으로 합니다. 
+> 기본 문법은 ECMAScript6.0 기반
 
 ## Build Setup
 

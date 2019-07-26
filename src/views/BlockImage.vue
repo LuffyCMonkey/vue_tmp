@@ -118,9 +118,9 @@ export default {
       let searchUrl = ''
       self.resultData = []
       if (pValue) {
-        urlDetail = '?user_nm=' + self.inUserNm + '&star_nm=' + self.inStarNm + '&search_index=' + pValue
+        urlDetail = ''
       } else {
-        urlDetail = '?user_nm=' + self.inUserNm + '&star_nm=' + self.inStarNm
+        urlDetail = ''
       }
       // console.log('urlDetail   : ' + urlDetail)
 
@@ -149,8 +149,8 @@ export default {
           'Accept': 'application/json'
         }})
         .then(function (result) {
-          self.resultMaxPageCount = parseInt(result.data.data[0].max_cnt)
-          self.lastNum = parseInt(result.data.data[0].max_cnt)
+          self.resultMaxPageCount = parseInt(0)
+          self.lastNum = parseInt(0)
           console.log('resultMaxPageCount   : ' + self.resultMaxPageCount)
           self.currentPageCnt = 0
         })

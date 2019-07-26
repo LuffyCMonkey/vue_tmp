@@ -145,29 +145,30 @@ export default {
         }})
         .then(function (result) {
           console.log('response :  ' + JSON.stringify(result.data.data))
+          /* API 통신 데이터 가져 오기 */
           resultJsonMsg = JSON.stringify(result.data.data)
           resultJsonData = JSON.parse(resultJsonMsg)
 
           /* 회원 */
-          self.resultNewUserCnt = resultJsonData[3][0].new_user_cnt
-          self.resultTotUserCnt = resultJsonData[0][0].tot_user_cnt
+          self.resultNewUserCnt = resultJsonData[0].tot_cnt
+          self.resultTotUserCnt = '위 형식으로 데이터 바인딩'
           /* 이미지 */
-          self.resultNewUserProfileCnt = resultJsonData[4][0].new_user_profile_cnt
-          self.resultTotUserProfileCnt = resultJsonData[1][0].tot_user_profile_cnt
+          self.resultNewUserProfileCnt = ''
+          self.resultTotUserProfileCnt = ''
           /* 포인트 */
-          self.resultTotPoint = resultJsonData[2][0].tot_point
-          self.resultNewPaymentPoint = resultJsonData[5][0].new_payment_point
-          self.resultTotToBePaid = resultJsonData[6][0].tot_to_be_paid
+          self.resultTotPoint = ''
+          self.resultNewPaymentPoint = ''
+          self.resultTotToBePaid = ''
           /* Up Amount 24 */
-          self.resultNewDownAmount = resultJsonData[8][0].new_down_amount
-          self.resultNewDownVol = resultJsonData[8][0].new_down_vol
-          self.resultNewUpAmount = resultJsonData[7][0].new_up_amount
-          self.resultNewUpVol = resultJsonData[7][0].new_up_vol
+          self.resultNewDownAmount = ''
+          self.resultNewDownVol = ''
+          self.resultNewUpAmount = ''
+          self.resultNewUpVol = ''
           /* Up Amount 누적 */
-          self.resultTotDownAmt = resultJsonData[9][0].tot_down_amt
-          self.resultTotDownHoldVol = resultJsonData[9][0].tot_down_hold_vol
-          self.resultTotUpAmt = resultJsonData[9][0].tot_up_amt
-          self.resultTotUpHoldVol = resultJsonData[9][0].tot_up_hold_vol
+          self.resultTotDownAmt = ''
+          self.resultTotDownHoldVol = ''
+          self.resultTotUpAmt = ''
+          self.resultTotUpHoldVol = ''
         })
         .catch(function (exception) {
           console.log('ex :  ' + exception)
